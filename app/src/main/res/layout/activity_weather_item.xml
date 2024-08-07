@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/weatherCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Weather Condition"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="96dp"
+        android:layout_height="91dp"
+        android:layout_below="@id/weatherCondition"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/sunrise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="20dp"
+        android:text="Sunrise"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/sunset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sunrise"
+        android:layout_marginTop="10dp"
+        android:text="Sunset"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/cityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sunrise"
+        android:layout_marginTop="35dp"
+        android:text="City"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/feelsLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityName"
+        android:layout_marginTop="10dp"
+        android:text="Feels Like"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/grndLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feelsLike"
+        android:layout_marginTop="10dp"
+        android:text="Ground Level"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grndLevel"
+        android:layout_marginTop="10dp"
+        android:text="Humidity"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/seaLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/humidity"
+        android:layout_marginTop="10dp"
+        android:text="Sea Level"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seaLevel"
+        android:layout_marginTop="10dp"
+        android:text="Temperature"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tempMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temp"
+        android:layout_marginTop="10dp"
+        android:text="Max Temperature"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tempMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tempMax"
+        android:layout_marginTop="10dp"
+        android:text="Min Temperature"
+        android:textSize="16sp" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tempMin"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
+
